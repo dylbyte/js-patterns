@@ -8,5 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dylan Baker",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.1.0"
+  }
 }
