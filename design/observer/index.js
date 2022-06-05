@@ -1,5 +1,5 @@
 import "./analytics.js";
-import Observable from "./observer";
+import Observable from "./observable.js";
 
 const pinkBtn = document.getElementById("pink-btn");
 const blueBtn = document.getElementById("blue-btn");

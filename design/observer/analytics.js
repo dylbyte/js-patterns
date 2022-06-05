@@ -1,4 +1,4 @@
-import Observable from "./observer";
+import Observable from "./observable";
 
 export function sendToGoogleAnalytics(data) {
   console.log("Sent to Google analytics: ", data);
