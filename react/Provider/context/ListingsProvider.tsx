@@ -1,0 +1,18 @@
+import React from "react";
+import useListings from "../hooks/useListings";
+
+const ListingsContext = React.createContext(null);
+
+export function useListingsContext() {
+  return React.useContext(ListingsContext);
+}
+
+export function ListingsProvider(props) {
+  const listings = useListings();
+  if (!listings) return <h1>Loading...</h1>;
+  return (
+    <ListingsContext.Provider value={listings}>
+      {props.children}
+    </ListingsContext.Provider>
+  );
+}
